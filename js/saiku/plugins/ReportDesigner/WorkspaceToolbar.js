@@ -63,7 +63,7 @@ reportDesigner.WorkspaceToolbar = WorkspaceToolbar.extend({
     },
 
 	changed_rowlimit: function(event){
-        this.workspace.metadataQuery.config.mql.options.limit = $(event.target).val();
+        this.workspace.query.metadataQuery.config.mql.options.limit = $(event.target).val();
         this.workspace.query.run(true);
 	},
 
